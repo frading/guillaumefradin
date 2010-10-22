@@ -7,12 +7,16 @@
 		= raw(include_stylesheets :all)
 		
 	%body
-		.title_container
-			.title
-				Guillaume Fradin
-		= render 'layouts/menu'
+		#root
+			.title_container
+				.title
+					Guillaume Fradin
+			= render 'layouts/menu'
+	
+			.main
+				=yield
+			#root_footer
 
-		=yield
-
-	= render 'layouts/footer'
-
+		= render 'layouts/footer'
+		
+	= render 'layouts/js'	

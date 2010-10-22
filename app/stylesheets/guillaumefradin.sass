@@ -12,14 +12,27 @@
 
 @import "rounded"
 
+@include sticky-footer(54px)
 
-$bg_color: #f6f6ff
+$custom_fonts = "museo-sans-1","museo-sans-2"
+
+$bg_color = #f6f6ff
 $very_faded_color = $bg_color - #111
 $faded_color = $bg_color - #444
 $normal_color = $bg_color - #888
 $strong_color = $bg_color - #ccc
 
+$section_title_color = lighten(desaturate(#00f, 50%), 30%)
+
+
+$directing_color = saturate($faded_color - #110, 20%)
+$vfx_color = saturate($faded_color - #101, 20%)
+$web_color = saturate($faded_color - #011, 20%)
+$contact_color = $faded_color
+
+
 body
+	:position relative
 	:background-color $bg_color
 	:color $normal_color
 
@@ -31,6 +44,7 @@ body
 	.title
 		:display inline-block
 		:font-size 50px
+		:font-family $custom_fonts
 		:margin
 			:left auto
 			:right auto
@@ -43,6 +57,8 @@ body
 		:left auto
 		:right auto
 	.menu
+		:font-family $custom_fonts
+		:font-size 20px
 		:display inline-block
 		:padding 5px
 		:border
@@ -51,55 +67,101 @@ body
 		ul               
 			:display inline
 			+no-bullet
-			:font-size 20px
 			:margin 0
 			:padding 0
 			li
 				:display inline
-				:padding
-					:top 4px
-					:bottom 4px
-					:left 10px
-					:right 10px
 				:margin
 					:left 5px
 					:right 5px
+				:padding
+					:top 4px
+					:bottom 4px
 				+border-radius(5px)
+				a
+					:display inline-block
+					:padding
+						:top 4px
+						:bottom 4px
+						:left 10px
+						:right 10px
 				&:hover
-					:background-color $faded_color
 					a
 						:text-decoration none
 						:color $strong_color
 				&.current_page
+					:padding
+						:top 4px
+						:bottom 4px
+						:left 10px
+						:right 10px
 					:text-decoration none
 					:color $strong_color
-					:background-color $faded_color
+					&.directing
+						:background-color $directing_color
+					&.vfx
+						:background-color $vfx_color
+					&.web
+						:background-color $web_color
+					&.contact
+						:background-color $contact_color
+					
+				&.directing
+					&:hover
+						:background-color $directing_color
+				&.vfx
+					&:hover
+						:background-color $vfx_color 
+				&.web
+					&:hover
+						:background-color $web_color 
 				&.contact
 					:margin-left 100px
 					:font-size 14px
 					:padding
 						:top 7px
 						:bottom 7px
+					&:hover
+						:background-color $contact_color 
 				a
 					:text-decoration none
 					:color $normal_color
 			
 	
 	
+.main
+	:width 600px
+	:margin
+		:left auto
+		:right auto
+	.section
+		:margin-top 40px
+		.title
+			:font-size 18px
+			:background-color $section_title_color
+			:color darken($section_title_color, 40%)
+			:padding
+				:top 2px
+				:bottom 2px
+				:left 10px
+			
+		.content
+			:font-size 14px
 			
 .footer_container
 	:width 100%
-	:position absolute
+	//:position absolute
 	:bottom 0px
 	:background-color $faded_color
-	:text-align center
+	:text-align right
 	:border
 		:top 1px $normal_color solid
 	:padding
 		:top 4px
 		:bottom 4px
 	.footer
-		:display inline
+		//:display inline
+		:margin-right 20px
 		ul
 			:display inline
 			+no-bullet
