@@ -294,19 +294,19 @@ caption {
   color: #111111;
 }
 
-/* line 21, guillaumefradin.sass */
+/* line 22, guillaumefradin.sass */
 body {
   background-color: #f6f6ff;
   color: #6e6e77;
 }
 
-/* line 25, guillaumefradin.sass */
+/* line 26, guillaumefradin.sass */
 .title_container {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 30, guillaumefradin.sass */
+/* line 31, guillaumefradin.sass */
 .title_container .title {
   display: inline-block;
   font-size: 50px;
@@ -315,20 +315,20 @@ body {
   padding-top: 20px;
 }
 
-/* line 39, guillaumefradin.sass */
+/* line 40, guillaumefradin.sass */
 .menu_container {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 44, guillaumefradin.sass */
+/* line 45, guillaumefradin.sass */
 .menu_container .menu {
   display: inline-block;
   padding: 5px;
   border-top: 1px #e5e5ee solid;
   border-bottom: 1px #e5e5ee solid;
 }
-/* line 50, guillaumefradin.sass */
+/* line 51, guillaumefradin.sass */
 .menu_container .menu ul {
   display: inline;
   list-style-image: none;
@@ -367,7 +367,61 @@ body {
   background-color: #b2b2bb;
 }
 /* line 77, guillaumefradin.sass */
+.menu_container .menu ul li.contact {
+  margin-left: 100px;
+  font-size: 14px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+/* line 83, guillaumefradin.sass */
 .menu_container .menu ul li a {
   text-decoration: none;
   color: #6e6e77;
+}
+
+/* line 90, guillaumefradin.sass */
+.footer_container {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: #b2b2bb;
+  text-align: center;
+  border-top: 1px #6e6e77 solid;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+/* line 101, guillaumefradin.sass */
+.footer_container .footer {
+  display: inline;
+}
+/* line 103, guillaumefradin.sass */
+.footer_container .footer ul {
+  display: inline;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  margin: 0;
+  padding: 0;
+}
+/* line 108, guillaumefradin.sass */
+.footer_container .footer ul li {
+  display: inline;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 116, guillaumefradin.sass */
+.footer_container .footer ul li a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+/* line 120, guillaumefradin.sass */
+.footer_container .footer ul li a.vimeo {
+  background-image: url("/images/embed/vimeo_48.png");
+}
+/* line 124, guillaumefradin.sass */
+.footer_container .footer ul li a.linkedin {
+  background-image: url("/images/embed/linkedin_48.png");
 }

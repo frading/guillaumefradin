@@ -1,6 +1,6 @@
 - if current_page?(path)
-	%li.current_page
+	%li{:class=>"current_page #{html_class}"}
 		= label
 - else
-	%li
+	%li{:class=>html_class}
 		= link_to(label, path)
