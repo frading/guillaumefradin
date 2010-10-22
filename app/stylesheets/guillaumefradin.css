@@ -305,59 +305,67 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -62px;
+  margin-bottom: -58px;
 }
 /* line 18, ../../../../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 #root #root_footer {
-  height: 62px;
+  height: 58px;
 }
 
 /* line 20, ../../../../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 #footer {
   clear: both;
   position: relative;
-  height: 62px;
+  height: 58px;
 }
 
-/* line 35, guillaumefradin.sass */
+/* line 37, guillaumefradin.sass */
 body {
   position: relative;
-  background-color: #f9f9ff;
-  color: #717177;
+  background-color: white;
+  color: #777777;
+  font-family: Helvetica Neue, Arial, Helvetica, Geneva, sans-serif;
 }
 
-/* line 41, guillaumefradin.sass */
+/* line 43, guillaumefradin.sass */
+table, tr, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 47, guillaumefradin.sass */
 .title_container {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 46, guillaumefradin.sass */
+/* line 52, guillaumefradin.sass */
 .title_container .title {
   display: inline-block;
   font-size: 50px;
-  font-family: museo-sans-1, museo-sans-2;
+  font-weight: bold;
+  color: #bbbbbb;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
 }
 
-/* line 56, guillaumefradin.sass */
+/* line 64, guillaumefradin.sass */
 .menu_container {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 61, guillaumefradin.sass */
+/* line 69, guillaumefradin.sass */
 .menu_container .menu {
-  font-family: museo-sans-1, museo-sans-2;
   font-size: 20px;
+  font-weight: bold;
   display: inline-block;
   padding: 5px;
-  border-top: 1px #e8e8ee solid;
-  border-bottom: 1px #e8e8ee solid;
+  border-top: 1px #eeeeee solid;
+  border-bottom: 1px #eeeeee solid;
 }
-/* line 69, guillaumefradin.sass */
+/* line 78, guillaumefradin.sass */
 .menu_container .menu ul {
   display: inline;
   list-style-image: none;
@@ -366,168 +374,118 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 74, guillaumefradin.sass */
+/* line 83, guillaumefradin.sass */
 .menu_container .menu ul li {
   display: inline;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-top: 4px;
   padding-bottom: 4px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
-/* line 83, guillaumefradin.sass */
-.menu_container .menu ul li a {
-  display: inline-block;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 /* line 91, guillaumefradin.sass */
-.menu_container .menu ul li:hover a {
-  text-decoration: none;
-  color: #f9f9ff;
-}
-/* line 94, guillaumefradin.sass */
-.menu_container .menu ul li.current_page {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-decoration: none;
-  color: #f9f9ff;
-}
-/* line 102, guillaumefradin.sass */
-.menu_container .menu ul li.current_page.directing {
-  background-color: #9494cb;
-}
-/* line 104, guillaumefradin.sass */
-.menu_container .menu ul li.current_page.vfx {
-  background-color: #94c6a5;
-}
-/* line 106, guillaumefradin.sass */
-.menu_container .menu ul li.current_page.web {
-  background-color: #c694a5;
-}
-/* line 108, guillaumefradin.sass */
-.menu_container .menu ul li.current_page.contact {
-  background-color: #b5b5bb;
-}
-/* line 112, guillaumefradin.sass */
-.menu_container .menu ul li.directing:hover {
-  background-color: #9494cb;
-}
-/* line 115, guillaumefradin.sass */
-.menu_container .menu ul li.vfx:hover {
-  background-color: #94c6a5;
-}
-/* line 118, guillaumefradin.sass */
-.menu_container .menu ul li.web:hover {
-  background-color: #c694a5;
-}
-/* line 120, guillaumefradin.sass */
-.menu_container .menu ul li.contact {
-  margin-left: 100px;
-  font-size: 14px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-/* line 126, guillaumefradin.sass */
-.menu_container .menu ul li.contact:hover {
-  background-color: #b5b5bb;
-}
-/* line 128, guillaumefradin.sass */
 .menu_container .menu ul li a {
   text-decoration: none;
-  color: #717177;
+  color: #bbbbbb;
+}
+/* line 94, guillaumefradin.sass */
+.menu_container .menu ul li a:hover {
+  color: #333333;
 }
 
-/* line 134, guillaumefradin.sass */
+/* line 148, guillaumefradin.sass */
 .main {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 135, guillaumefradin.sass */
+/* line 149, guillaumefradin.sass */
 .main a {
   text-decoration: none;
   color: black;
 }
-/* line 138, guillaumefradin.sass */
+/* line 152, guillaumefradin.sass */
 .main a:hover {
-  color: #f9f9ff;
-  background-color: #2d2d33;
+  color: white;
+  background-color: #333333;
 }
-/* line 141, guillaumefradin.sass */
+/* line 155, guillaumefradin.sass */
 .main a.img_link {
-  background-color: #f9f9ff;
+  background-color: white;
 }
-/* line 147, guillaumefradin.sass */
+/* line 161, guillaumefradin.sass */
 .main .section {
   margin-top: 40px;
 }
-/* line 149, guillaumefradin.sass */
+/* line 163, guillaumefradin.sass */
 .main .section .title {
   font-size: 18px;
-  background-color: #c0b3e6;
-  color: #4e3399;
+  background-color: #eeeeee;
+  color: #555555;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 10px;
 }
-/* line 158, guillaumefradin.sass */
+/* line 172, guillaumefradin.sass */
 .main .section .content {
   font-size: 14px;
 }
 
-/* line 161, guillaumefradin.sass */
-.footer_container {
-  width: 100%;
-  bottom: 0px;
-  background-color: #b5b5bb;
-  text-align: right;
-  border-top: 1px #717177 solid;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-/* line 172, guillaumefradin.sass */
-.footer_container .footer {
-  margin-right: 20px;
-}
 /* line 175, guillaumefradin.sass */
-.footer_container .footer ul {
+#footer {
+  background-color: #eeeeee;
+}
+/* line 183, guillaumefradin.sass */
+#footer td {
+  border-top: 1px #777777 solid;
+}
+/* line 186, guillaumefradin.sass */
+#footer ul.left {
+  text-align: left;
   display: inline;
+  font-size: 18px;
+  color: #333333;
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
   margin: 0;
   padding: 0;
 }
-/* line 180, guillaumefradin.sass */
-.footer_container .footer ul li {
+/* line 194, guillaumefradin.sass */
+#footer ul.left li {
   display: inline;
+  padding-left: 20px;
+}
+/* line 198, guillaumefradin.sass */
+#footer ul.right {
+  text-align: right;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-right: 20px;
+  margin: 0;
+}
+/* line 207, guillaumefradin.sass */
+#footer ul.right li {
+  display: inline;
   margin-left: 5px;
   margin-right: 5px;
 }
-/* line 188, guillaumefradin.sass */
-.footer_container .footer ul li a {
+/* line 212, guillaumefradin.sass */
+#footer ul.right li a {
   display: inline-block;
   width: 48px;
   height: 48px;
 }
-/* line 195, guillaumefradin.sass */
-.footer_container .footer ul li a.imdb {
+/* line 219, guillaumefradin.sass */
+#footer ul.right li a.imdb {
   background-image: url("/images/embed/imdb.png");
 }
-/* line 197, guillaumefradin.sass */
-.footer_container .footer ul li a.vimeo {
+/* line 221, guillaumefradin.sass */
+#footer ul.right li a.vimeo {
   background-image: url("/images/embed/vimeo.png");
 }
-/* line 201, guillaumefradin.sass */
-.footer_container .footer ul li a.linkedin {
+/* line 225, guillaumefradin.sass */
+#footer ul.right li a.linkedin {
   background-image: url("/images/embed/linkedin.png");
 }

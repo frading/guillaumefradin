@@ -12,11 +12,11 @@
 
 @import "rounded"
 
-@include sticky-footer(62px)
+@include sticky-footer(58px)
 
 $custom_fonts = "museo-sans-1","museo-sans-2"
 
-$bg_color = #f9f9ff
+$bg_color = #ffffff
 $very_faded_color = $bg_color - #111
 $faded_color = $bg_color - #444
 $normal_color = $bg_color - #888
@@ -29,14 +29,20 @@ $section_title_color = lighten(desaturate(#40f, 50%), 30%)
 $directing_color = saturate($faded_color - #110, 20%)
 $vfx_color = saturate($faded_color - #101, 20%)
 $web_color = saturate($faded_color - #011, 20%)
-$contact_color = $faded_color
+$news_color = darken(#ff0, 10%)
 
+
+$default_font = "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif
 
 body
 	:position relative
 	:background-color $bg_color
 	:color $normal_color
+	:font-family $default_font
 
+table, tr, td
+	:margin 0
+	:padding 0
 	
 .title_container
 	:text-align center
@@ -46,7 +52,9 @@ body
 	.title
 		:display inline-block
 		:font-size 50px
-		:font-family $custom_fonts
+		:font-weight bold
+		:color $faded_color
+		//:font-family $custom_fonts
 		:margin
 			:left auto
 			:right auto
@@ -59,8 +67,9 @@ body
 		:left auto
 		:right auto
 	.menu
-		:font-family $custom_fonts
+		//:font-family $custom_fonts
 		:font-size 20px
+		:font-weight bold
 		:display inline-block
 		:padding 5px
 		:border
@@ -74,60 +83,65 @@ body
 			li
 				:display inline
 				:margin
-					:left 5px
-					:right 5px
+					:left 20px
+					:right 20px
 				:padding
 					:top 4px
 					:bottom 4px
-				+border-radius(5px)
-				a
-					:display inline-block
-					:padding
-						:top 4px
-						:bottom 4px
-						:left 10px
-						:right 10px
-				&:hover
-					a
-						:text-decoration none
-						:color $bg_color
-				&.current_page
-					:padding
-						:top 4px
-						:bottom 4px
-						:left 10px
-						:right 10px
-					:text-decoration none
-					:color $bg_color
-					&.directing
-						:background-color $directing_color
-					&.vfx
-						:background-color $vfx_color
-					&.web
-						:background-color $web_color
-					&.contact
-						:background-color $contact_color
-					
-				&.directing
-					&:hover
-						:background-color $directing_color
-				&.vfx
-					&:hover
-						:background-color $vfx_color 
-				&.web
-					&:hover
-						:background-color $web_color 
-				&.contact
-					:margin-left 100px
-					:font-size 14px
-					:padding
-						:top 7px
-						:bottom 7px
-					&:hover
-						:background-color $contact_color 
 				a
 					:text-decoration none
-					:color $normal_color
+					:color $faded_color
+					&:hover
+						:color $strong_color
+				//+border-radius(5px)
+				//a
+				//	:display inline-block
+				//	:padding
+				//		:top 4px
+				//		:bottom 4px
+				//		:left 10px
+				//		:right 10px
+				//&:hover
+				//	a
+				//		:text-decoration none
+				//		:color $bg_color
+				//&.current_page
+				//	:padding
+				//		:top 4px
+				//		:bottom 4px
+				//		:left 10px
+				//		:right 10px
+				//	:text-decoration none
+				//	:color $bg_color
+				//	&.directing
+				//		:background-color $directing_color
+				//	&.vfx
+				//		:background-color $vfx_color
+				//	&.web
+				//		:background-color $web_color
+				//	&.news
+				//		:background-color $news_color
+				//	
+				//&.directing
+				//	&:hover
+				//		:background-color $directing_color
+				//&.vfx
+				//	&:hover
+				//		:background-color $vfx_color 
+				//&.web
+				//	&:hover
+				//		:background-color $web_color 
+				//&.news
+				//	:margin-left 100px
+				//	:font-size 14px
+				//	:padding
+				//		:top 7px
+				//		:bottom 7px
+				//	&:hover
+				//		:background-color $news_color 
+				//a
+				//	:text-decoration none
+				//	:color $normal_color
 			
 	
 	
@@ -148,8 +162,8 @@ body
 		:margin-top 40px
 		.title
 			:font-size 18px
-			:background-color $section_title_color
-			:color darken($section_title_color, 40%)
+			:background-color $very_faded_color
+			:color darken($faded_color, 40%)
 			:padding
 				:top 2px
 				:bottom 2px
@@ -158,48 +172,58 @@ body
 		.content
 			:font-size 14px
 			
-.footer_container
-	:width 100%
+#footer
+	//:width 100%
 	//:position absolute
-	:bottom 0px
-	:background-color $faded_color
-	:text-align right
-	:border
-		:top 1px $normal_color solid
-	:padding
-		:top 4px
-		:bottom 4px
-	.footer
-		//:display inline
-		:margin-right 20px
-		ul
+	//:bottom 0px
+	:background-color $very_faded_color
+	//:padding
+	//	:top 4px
+	//	:bottom 4px
+	td
+		:border
+			:top 1px $normal_color solid
+	ul.left
+		:text-align left
+		:display inline
+		:font-size 18px
+		:color $strong_color
+		+no-bullet
+		:margin 0
+		:padding 0
+		li
 			:display inline
-			+no-bullet
-			:margin 0
-			:padding 0
-			li
-				:display inline
-				:padding
-					:top 4px
-					:bottom 4px
-				:margin
-					:left 5px
-					:right 5px
-				a
-					:display inline-block
-					:width 48px
-					:height 48px
-					
-					// nice icons here:
-					// www.softicons.com/free-icons/internet-icons/social-media-icons-by-paul-robert-lloyd/imdb-icon
-					&.imdb
-						:background-image url('/images/embed/imdb.png')
-					&.vimeo
-						:background-image url('/images/embed/vimeo.png')
-					//&.facebook
-					//	:background-image url('/images/embed/facebook_48.png')
-					&.linkedin
-						:background-image url('/images/embed/linkedin.png')
-					//&.twitter
-					//	:background-image url('/images/embed/twitter_48.png')
+			:padding-left 20px
+		
+	ul.right
+		:text-align right
+		+no-bullet
+		:padding
+			:top 4px
+			//:bottom 4px
+			:right 20px
+		:margin 0
+		//:margin-right 20px
+		li
+			:display inline
+			:margin
+				:left 5px
+				:right 5px
+			a
+				:display inline-block
+				:width 48px
+				:height 48px
+				
+				// nice icons here:
+				// www.softicons.com/free-icons/internet-icons/social-media-icons-by-paul-robert-lloyd/imdb-icon
+				&.imdb
+					:background-image url('/images/embed/imdb.png')
+				&.vimeo
+					:background-image url('/images/embed/vimeo.png')
+				//&.facebook
+				//	:background-image url('/images/embed/facebook_48.png')
+				&.linkedin
+					:background-image url('/images/embed/linkedin.png')
+				//&.twitter
+				//	:background-image url('/images/embed/twitter_48.png')
 

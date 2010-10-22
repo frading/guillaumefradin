@@ -1,9 +1,5 @@
 class HomeController < ApplicationController
   
-	def index
-		#redirect_to web_path
-	end
-
 	def directing
 	end
 	
@@ -13,7 +9,7 @@ class HomeController < ApplicationController
 	def web
 	end
 	
-	def contact
+	def news
 	end
 	
 end
