@@ -1,0 +1,16 @@
+!!!
+%html
+	%head
+		%title
+			Guillaume Fradin
+		= csrf_meta_tag
+		= raw(include_stylesheets :all)
+		
+	%body
+		.title_container
+			.title
+				Guillaume Fradin
+		= render 'layouts/menu'
+
+		=yield
+

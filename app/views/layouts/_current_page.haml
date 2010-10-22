@@ -1,0 +1,6 @@
+- if current_page?(path)
+	%li.current_page
+		= label
+- else
+	%li
+		= link_to(label, path)

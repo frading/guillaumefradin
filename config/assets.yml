@@ -1,0 +1,32 @@
+package_assets: on
+embed_assets: datauri
+compress_asset: off
+gzip_assets: on
+
+#javascript_compressor: yui
+#compressor_options:
+#  munge: on
+#javascript_compressor: closure
+#compressor_options:
+#  #compilation_level: "SIMPLE_OPTIMIZATIONS"
+#  compilation_level: "ADVANCED_OPTIMIZATIONS"
+#  externs: "app/javascripts/compiler.js"
+#  #formatting: "pretty_print"
+#  
+#javascripts:
+#  all:
+#    - app/javascripts/frameworks/underscore.js
+#    - app/javascripts/globals.js
+#    - app/javascripts/rails.js
+#    - app/javascripts/frameworks/plugins/*.js
+#    - app/javascripts/frameworks/js-model/0.8.4b/*.js
+#    - app/javascripts/frameworks/sammy/*.js
+#    - app/javascripts/frameworks/sammy/*/*.js
+#    - app/javascripts/lib/*/*/*.js
+#    - app/javascripts/lib/*/*.js
+#    - app/javascripts/compiled/*.js
+
+stylesheets:
+  all:
+    - app/stylesheets/guillaumefradin.css
+

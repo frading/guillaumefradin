@@ -1,0 +1,87 @@
+
+@import "compass/reset"
+@import "blueprint"
++blueprint-typography
+
+@import "compass/layout"
+@import "compass/utilities"
+@import "compass/css3"
+@import "compass/css3/box-shadow"
+@import "compass/css3/opacity"
+@import "compass/css3/transform"
+
+@import "rounded"
+
+$bg_color: #f6f6ff
+$very_faded_color = $bg_color - #111
+$faded_color = $bg_color - #444
+$normal_color = $bg_color - #888
+$strong_color = $bg_color - #ccc
+
+body
+	:background-color $bg_color
+	:color $normal_color
+
+.title_container
+	:text-align center
+	:margin
+		:left auto
+		:right auto
+	.title
+		:display inline-block
+		:font-size 50px
+		:margin
+			:left auto
+			:right auto
+		:padding
+			:top 20px
+		
+.menu_container
+	:text-align center
+	:margin
+		:left auto
+		:right auto
+	.menu
+		:display inline-block
+		:padding 5px
+		:border
+			:top 1px $very_faded_color solid
+			:bottom 1px $very_faded_color solid
+		ul               
+			:display inline
+			+no-bullet
+			//+horizontal-list
+			:font-size 20px
+			:margin 0
+			:padding 0
+			li
+				:display inline
+				:padding
+					:top 4px
+					:bottom 4px
+					:left 10px
+					:right 10px
+				:margin
+					:left 5px
+					:right 5px
+				+border-radius(5px)
+				&:hover
+					:background-color $faded_color
+					a
+						:text-decoration none
+						:color $strong_color
+				&.current_page
+					:text-decoration none
+					:color $strong_color
+					:background-color $faded_color
+				a
+					:text-decoration none
+					:color $normal_color
+			
+	
+	
+			
+	
+	
+		
+
