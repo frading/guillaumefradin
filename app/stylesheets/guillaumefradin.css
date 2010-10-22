@@ -305,34 +305,34 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -54px;
+  margin-bottom: -62px;
 }
 /* line 18, ../../../../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 #root #root_footer {
-  height: 54px;
+  height: 62px;
 }
 
 /* line 20, ../../../../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 #footer {
   clear: both;
   position: relative;
-  height: 54px;
+  height: 62px;
 }
 
-/* line 34, guillaumefradin.sass */
+/* line 35, guillaumefradin.sass */
 body {
   position: relative;
-  background-color: #f6f6ff;
-  color: #6e6e77;
+  background-color: #f9f9ff;
+  color: #717177;
 }
 
-/* line 39, guillaumefradin.sass */
+/* line 41, guillaumefradin.sass */
 .title_container {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 44, guillaumefradin.sass */
+/* line 46, guillaumefradin.sass */
 .title_container .title {
   display: inline-block;
   font-size: 50px;
@@ -342,22 +342,22 @@ body {
   padding-top: 20px;
 }
 
-/* line 54, guillaumefradin.sass */
+/* line 56, guillaumefradin.sass */
 .menu_container {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 59, guillaumefradin.sass */
+/* line 61, guillaumefradin.sass */
 .menu_container .menu {
   font-family: museo-sans-1, museo-sans-2;
   font-size: 20px;
   display: inline-block;
   padding: 5px;
-  border-top: 1px #e5e5ee solid;
-  border-bottom: 1px #e5e5ee solid;
+  border-top: 1px #e8e8ee solid;
+  border-bottom: 1px #e8e8ee solid;
 }
-/* line 67, guillaumefradin.sass */
+/* line 69, guillaumefradin.sass */
 .menu_container .menu ul {
   display: inline;
   list-style-image: none;
@@ -366,7 +366,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 72, guillaumefradin.sass */
+/* line 74, guillaumefradin.sass */
 .menu_container .menu ul li {
   display: inline;
   margin-left: 5px;
@@ -377,7 +377,7 @@ body {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-/* line 81, guillaumefradin.sass */
+/* line 83, guillaumefradin.sass */
 .menu_container .menu ul li a {
   display: inline-block;
   padding-top: 4px;
@@ -385,104 +385,118 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 89, guillaumefradin.sass */
+/* line 91, guillaumefradin.sass */
 .menu_container .menu ul li:hover a {
   text-decoration: none;
-  color: #2a2a33;
+  color: #f9f9ff;
 }
-/* line 92, guillaumefradin.sass */
+/* line 94, guillaumefradin.sass */
 .menu_container .menu ul li.current_page {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
-  color: #2a2a33;
-}
-/* line 100, guillaumefradin.sass */
-.menu_container .menu ul li.current_page.directing {
-  background-color: #9191cb;
+  color: #f9f9ff;
 }
 /* line 102, guillaumefradin.sass */
-.menu_container .menu ul li.current_page.vfx {
-  background-color: #90c3ab;
+.menu_container .menu ul li.current_page.directing {
+  background-color: #9494cb;
 }
 /* line 104, guillaumefradin.sass */
-.menu_container .menu ul li.current_page.web {
-  background-color: #c390ab;
+.menu_container .menu ul li.current_page.vfx {
+  background-color: #94c6a5;
 }
 /* line 106, guillaumefradin.sass */
+.menu_container .menu ul li.current_page.web {
+  background-color: #c694a5;
+}
+/* line 108, guillaumefradin.sass */
 .menu_container .menu ul li.current_page.contact {
-  background-color: #b2b2bb;
+  background-color: #b5b5bb;
 }
-/* line 110, guillaumefradin.sass */
+/* line 112, guillaumefradin.sass */
 .menu_container .menu ul li.directing:hover {
-  background-color: #9191cb;
+  background-color: #9494cb;
 }
-/* line 113, guillaumefradin.sass */
+/* line 115, guillaumefradin.sass */
 .menu_container .menu ul li.vfx:hover {
-  background-color: #90c3ab;
-}
-/* line 116, guillaumefradin.sass */
-.menu_container .menu ul li.web:hover {
-  background-color: #c390ab;
+  background-color: #94c6a5;
 }
 /* line 118, guillaumefradin.sass */
+.menu_container .menu ul li.web:hover {
+  background-color: #c694a5;
+}
+/* line 120, guillaumefradin.sass */
 .menu_container .menu ul li.contact {
   margin-left: 100px;
   font-size: 14px;
   padding-top: 7px;
   padding-bottom: 7px;
 }
-/* line 124, guillaumefradin.sass */
-.menu_container .menu ul li.contact:hover {
-  background-color: #b2b2bb;
-}
 /* line 126, guillaumefradin.sass */
+.menu_container .menu ul li.contact:hover {
+  background-color: #b5b5bb;
+}
+/* line 128, guillaumefradin.sass */
 .menu_container .menu ul li a {
   text-decoration: none;
-  color: #6e6e77;
+  color: #717177;
 }
 
-/* line 132, guillaumefradin.sass */
+/* line 134, guillaumefradin.sass */
 .main {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 137, guillaumefradin.sass */
+/* line 135, guillaumefradin.sass */
+.main a {
+  text-decoration: none;
+  color: black;
+}
+/* line 138, guillaumefradin.sass */
+.main a:hover {
+  color: #f9f9ff;
+  background-color: #2d2d33;
+}
+/* line 141, guillaumefradin.sass */
+.main a.img_link {
+  background-color: #f9f9ff;
+}
+/* line 147, guillaumefradin.sass */
 .main .section {
   margin-top: 40px;
 }
-/* line 139, guillaumefradin.sass */
+/* line 149, guillaumefradin.sass */
 .main .section .title {
   font-size: 18px;
-  background-color: #b3b3e6;
-  color: #333399;
+  background-color: #c0b3e6;
+  color: #4e3399;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 10px;
 }
-/* line 148, guillaumefradin.sass */
+/* line 158, guillaumefradin.sass */
 .main .section .content {
   font-size: 14px;
 }
 
-/* line 151, guillaumefradin.sass */
+/* line 161, guillaumefradin.sass */
 .footer_container {
   width: 100%;
   bottom: 0px;
-  background-color: #b2b2bb;
+  background-color: #b5b5bb;
   text-align: right;
-  border-top: 1px #6e6e77 solid;
+  border-top: 1px #717177 solid;
   padding-top: 4px;
   padding-bottom: 4px;
 }
-/* line 162, guillaumefradin.sass */
+/* line 172, guillaumefradin.sass */
 .footer_container .footer {
   margin-right: 20px;
 }
-/* line 165, guillaumefradin.sass */
+/* line 175, guillaumefradin.sass */
 .footer_container .footer ul {
   display: inline;
   list-style-image: none;
@@ -491,7 +505,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 170, guillaumefradin.sass */
+/* line 180, guillaumefradin.sass */
 .footer_container .footer ul li {
   display: inline;
   padding-top: 4px;
@@ -499,17 +513,21 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
-/* line 178, guillaumefradin.sass */
+/* line 188, guillaumefradin.sass */
 .footer_container .footer ul li a {
   display: inline-block;
   width: 48px;
   height: 48px;
 }
-/* line 182, guillaumefradin.sass */
-.footer_container .footer ul li a.vimeo {
-  background-image: url("/images/embed/vimeo_48.png");
+/* line 195, guillaumefradin.sass */
+.footer_container .footer ul li a.imdb {
+  background-image: url("/images/embed/imdb.png");
 }
-/* line 186, guillaumefradin.sass */
+/* line 197, guillaumefradin.sass */
+.footer_container .footer ul li a.vimeo {
+  background-image: url("/images/embed/vimeo.png");
+}
+/* line 201, guillaumefradin.sass */
 .footer_container .footer ul li a.linkedin {
-  background-image: url("/images/embed/linkedin_48.png");
+  background-image: url("/images/embed/linkedin.png");
 }

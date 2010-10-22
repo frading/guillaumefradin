@@ -12,17 +12,18 @@
 
 @import "rounded"
 
-@include sticky-footer(54px)
+@include sticky-footer(62px)
 
 $custom_fonts = "museo-sans-1","museo-sans-2"
 
-$bg_color = #f6f6ff
+$bg_color = #f9f9ff
 $very_faded_color = $bg_color - #111
 $faded_color = $bg_color - #444
 $normal_color = $bg_color - #888
 $strong_color = $bg_color - #ccc
+$very_strong_color = black
 
-$section_title_color = lighten(desaturate(#00f, 50%), 30%)
+$section_title_color = lighten(desaturate(#40f, 50%), 30%)
 
 
 $directing_color = saturate($faded_color - #110, 20%)
@@ -36,6 +37,7 @@ body
 	:background-color $bg_color
 	:color $normal_color
 
+	
 .title_container
 	:text-align center
 	:margin
@@ -88,7 +90,7 @@ body
 				&:hover
 					a
 						:text-decoration none
-						:color $strong_color
+						:color $bg_color
 				&.current_page
 					:padding
 						:top 4px
@@ -96,7 +98,7 @@ body
 						:left 10px
 						:right 10px
 					:text-decoration none
-					:color $strong_color
+					:color $bg_color
 					&.directing
 						:background-color $directing_color
 					&.vfx
@@ -130,6 +132,14 @@ body
 	
 	
 .main
+	a
+		:text-decoration none
+		:color $very_strong_color
+		&:hover
+			:color $bg_color
+			:background-color $strong_color
+		&.img_link
+			:background-color $bg_color
 	:width 600px
 	:margin
 		:left auto
@@ -179,12 +189,17 @@ body
 					:display inline-block
 					:width 48px
 					:height 48px
+					
+					// nice icons here:
+					// www.softicons.com/free-icons/internet-icons/social-media-icons-by-paul-robert-lloyd/imdb-icon
+					&.imdb
+						:background-image url('/images/embed/imdb.png')
 					&.vimeo
-						:background-image url('/images/embed/vimeo_48.png')
+						:background-image url('/images/embed/vimeo.png')
 					//&.facebook
 					//	:background-image url('/images/embed/facebook_48.png')
 					&.linkedin
-						:background-image url('/images/embed/linkedin_48.png')
+						:background-image url('/images/embed/linkedin.png')
 					//&.twitter
 					//	:background-image url('/images/embed/twitter_48.png')
 
