@@ -5,7 +5,8 @@ module ApplicationHelper
 	end
 	
 	def feedburner_url
-		feed_url(:atom)
+		#feed_url(:atom)
+		'http://guillaumefradin.heroku.com/feed.atom'
 	end
 	
 end
