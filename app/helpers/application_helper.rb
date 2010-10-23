@@ -4,4 +4,8 @@ module ApplicationHelper
 		render :partial=>'layouts/current_page', :locals=>{:label=>label, :path=>path, :html_class=>html_class}
 	end
 	
+	def feedburner_url
+		feed_url(:atom)
+	end
+	
 end

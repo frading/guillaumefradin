@@ -11,4 +11,7 @@
 		= link_to "<< previous post", post.previous_post
 		
 	- if post.more_recent_post
-		= link_to "more recent post >>", post.more_recent_post		
+		= link_to "more recent post >>", post.more_recent_post
+		
+	%a{:class=>'img_link feed', :href=>feedburner_url}
+
