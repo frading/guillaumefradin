@@ -361,9 +361,6 @@ table, tr, td {
   font-size: 20px;
   font-weight: bold;
   display: inline-block;
-  padding: 5px;
-  border-top: 1px #eeeeee solid;
-  border-bottom: 1px #eeeeee solid;
 }
 /* line 78, guillaumefradin.sass */
 .menu_container .menu ul {
