@@ -6,14 +6,15 @@ Guillaumefradin::Application.routes.draw do
   	match name => "home##{name}"
   end
 
-  resources :posts
+  resources :posts, :only=>[:show, :index]
+  match 'feed', :to=>'posts#feed'
   
-  devise_for 	:users
-	
-	as :user do
-		match 'login', :to => 'devise/sessions#new', :as => "new_user_session"
-		match 'logout', :to  => 'devise/sessions#destroy', :as => "destroy_user_session"
-	end
+  #devise_for 	:users
+	#
+	#as :user do
+	#	match 'login', :to => 'devise/sessions#new', :as => "new_user_session"
+	#	match 'logout', :to  => 'devise/sessions#destroy', :as => "destroy_user_session"
+	#end
 
 	
 	#if %w{ development test}.include? Rails.env 

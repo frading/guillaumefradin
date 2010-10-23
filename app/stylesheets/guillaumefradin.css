@@ -391,7 +391,7 @@ table, tr, td {
 
 /* line 147, guillaumefradin.sass */
 .main {
-  width: 600px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -426,16 +426,23 @@ table, tr, td {
 .main .section .content {
   font-size: 14px;
 }
+/* line 173, guillaumefradin.sass */
+.main .section .date {
+  margin-top: 10px;
+  border-top: 1px #eeeeee solid;
+  color: #bbbbbb;
+  text-align: right;
+}
 
-/* line 174, guillaumefradin.sass */
+/* line 179, guillaumefradin.sass */
 #footer {
   background-color: #eeeeee;
 }
-/* line 182, guillaumefradin.sass */
+/* line 187, guillaumefradin.sass */
 #footer td {
   border-top: 1px #777777 solid;
 }
-/* line 185, guillaumefradin.sass */
+/* line 190, guillaumefradin.sass */
 #footer ul.left {
   text-align: left;
   display: inline;
@@ -447,12 +454,12 @@ table, tr, td {
   margin: 0;
   padding: 0;
 }
-/* line 193, guillaumefradin.sass */
+/* line 198, guillaumefradin.sass */
 #footer ul.left li {
   display: inline;
   padding-left: 20px;
 }
-/* line 197, guillaumefradin.sass */
+/* line 202, guillaumefradin.sass */
 #footer ul.right {
   text-align: right;
   list-style-image: none;
@@ -462,27 +469,27 @@ table, tr, td {
   padding-right: 20px;
   margin: 0;
 }
-/* line 206, guillaumefradin.sass */
+/* line 211, guillaumefradin.sass */
 #footer ul.right li {
   display: inline;
   margin-left: 5px;
   margin-right: 5px;
 }
-/* line 211, guillaumefradin.sass */
+/* line 216, guillaumefradin.sass */
 #footer ul.right li a {
   display: inline-block;
   width: 48px;
   height: 48px;
 }
-/* line 218, guillaumefradin.sass */
+/* line 223, guillaumefradin.sass */
 #footer ul.right li a.imdb {
   background-image: url("/images/embed/imdb.png");
 }
-/* line 220, guillaumefradin.sass */
+/* line 225, guillaumefradin.sass */
 #footer ul.right li a.vimeo {
   background-image: url("/images/embed/vimeo.png");
 }
-/* line 224, guillaumefradin.sass */
+/* line 229, guillaumefradin.sass */
 #footer ul.right li a.linkedin {
   background-image: url("/images/embed/linkedin.png");
 }

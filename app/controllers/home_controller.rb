@@ -10,6 +10,7 @@ class HomeController < ApplicationController
 	end
 	
 	def news
+		@post = Post.where(:published=>true).last
 	end
 	
 end

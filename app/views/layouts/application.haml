@@ -5,6 +5,7 @@
 			Guillaume Fradin
 		= csrf_meta_tag
 		= raw(include_stylesheets :all)
+		= auto_discovery_link_tag :atom, feed_url(:atom)
 		
 	%body
 		#root
