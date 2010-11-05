@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 		base_host = "www.guillaumefradin.com"
 		#base_host = "everytimehq.heroku.com"
 		if request.host != base_host
-			redirect_to request.protocol + base_host + request.request_uri
+			redirect_to request.protocol + base_host + request.fullpath
 		end
 	end
 
