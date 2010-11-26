@@ -1,17 +1,18 @@
 
 .section
 	.title
-		= post.title
+		= post.title.titleize
 	.content
 		= render "posts/content/#{post.partial}"
 	.date
 		= post.published_at.to_s(:pretty)
 		
-	- if post.previous_post
-		= link_to "<< previous post", post.previous_post
-		
-	- if post.more_recent_post
-		= link_to "more recent post >>", post.more_recent_post
+	.links
+		- if post.previous_post
+			= link_to "<< older posts", post.previous_post
+			
+		- if post.more_recent_post
+			= link_to "more recent posts >>", post.more_recent_post
 		
 	%a{:class=>'img_link feed', :href=>feedburner_url}
 

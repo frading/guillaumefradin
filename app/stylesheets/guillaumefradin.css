@@ -427,14 +427,22 @@ table, tr, td {
   font-size: 14px;
 }
 /* line 173, guillaumefradin.sass */
+.main .section .content img {
+  display: block;
+}
+/* line 175, guillaumefradin.sass */
 .main .section .date {
   margin-top: 10px;
   border-top: 1px #eeeeee solid;
   color: #bbbbbb;
   text-align: right;
 }
+/* line 181, guillaumefradin.sass */
+.main .section .links a {
+  margin-right: 20px;
+}
 
-/* line 179, guillaumefradin.sass */
+/* line 184, guillaumefradin.sass */
 a.feed {
   margin-top: 10px;
   display: block;
@@ -444,15 +452,15 @@ a.feed {
   background-image: url("/images/embed/feed_32.png");
 }
 
-/* line 188, guillaumefradin.sass */
+/* line 193, guillaumefradin.sass */
 #footer {
   background-color: #eeeeee;
 }
-/* line 196, guillaumefradin.sass */
+/* line 201, guillaumefradin.sass */
 #footer td {
   border-top: 1px #777777 solid;
 }
-/* line 199, guillaumefradin.sass */
+/* line 204, guillaumefradin.sass */
 #footer ul.left {
   text-align: left;
   display: inline;
@@ -464,12 +472,12 @@ a.feed {
   margin: 0;
   padding: 0;
 }
-/* line 207, guillaumefradin.sass */
+/* line 212, guillaumefradin.sass */
 #footer ul.left li {
   display: inline;
   padding-left: 20px;
 }
-/* line 211, guillaumefradin.sass */
+/* line 216, guillaumefradin.sass */
 #footer ul.right {
   text-align: right;
   list-style-image: none;
@@ -479,13 +487,13 @@ a.feed {
   padding-right: 20px;
   margin: 0;
 }
-/* line 220, guillaumefradin.sass */
+/* line 225, guillaumefradin.sass */
 #footer ul.right li {
   display: inline;
   margin-left: 5px;
   margin-right: 5px;
 }
-/* line 225, guillaumefradin.sass */
+/* line 230, guillaumefradin.sass */
 #footer ul.right li a {
   display: inline-block;
   width: 48px;
@@ -494,25 +502,25 @@ a.feed {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
-/* line 230, guillaumefradin.sass */
+/* line 235, guillaumefradin.sass */
 #footer ul.right li a:hover {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
-/* line 234, guillaumefradin.sass */
+/* line 239, guillaumefradin.sass */
 #footer ul.right li a.imdb {
   background-image: url("/images/embed/imdb.png");
 }
-/* line 236, guillaumefradin.sass */
+/* line 241, guillaumefradin.sass */
 #footer ul.right li a.vimeo {
   background-image: url("/images/embed/vimeo.png");
 }
-/* line 240, guillaumefradin.sass */
+/* line 245, guillaumefradin.sass */
 #footer ul.right li a.linkedin {
   background-image: url("/images/embed/linkedin.png");
 }
-/* line 242, guillaumefradin.sass */
+/* line 247, guillaumefradin.sass */
 #footer ul.right li a.feed_url {
   background-image: url("/images/embed/feed_48.png");
 }

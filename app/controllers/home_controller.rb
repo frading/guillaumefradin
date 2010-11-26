@@ -9,6 +9,9 @@ class HomeController < ApplicationController
 	def web
 	end
 	
+	def press
+	end
+	
 	def news
 		@post = Post.where(:published=>true).last
 	end
