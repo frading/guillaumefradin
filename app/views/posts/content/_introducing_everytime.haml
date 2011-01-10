@@ -1,4 +1,5 @@
 - everytime_root = "http://www.everytimehq.com"
+- embed_root = "http://widget.everytimehq.com"
 
 %a{:class=>'img_link', :href=>everytime_root}
 	= image_tag '/images/everytime_logo.jpg', :width=>"70%"
@@ -29,8 +30,11 @@
 	
 
 .iframe_container
-	<iframe src="http://widget.everytimehq.com/embed/media/Tv1BIJxMRWfYtg83" allowtransparency="true" width="440" height="660"></iframe>
+	- token = "Tv1BIJxMRWfYtg83"
+	%script{:type=>'text/javascript', :src=>"#{embed_root}/embed/media/#{token}.js"}
 	
 	
 .iframe_container
-	<iframe src="http://widget.everytimehq.com/embed/media/xZ4mW8i6NZkt0Mcl" allowtransparency="true" width="440" height="660"></iframe>
+	- token = "xZ4mW8i6NZkt0Mcl"
+	%script{:type=>'text/javascript', :src=>"#{embed_root}/embed/media/#{token}.js"}
+
