@@ -1,0 +1,33 @@
+- everytime_root = "http://www.everytimehq.com"
+
+%a{:class=>'img_link', :href=>everytime_root}
+	= image_tag '/images/everytime_logo.jpg', :width=>"70%"
+
+%p
+	I am very happy today to introduce
+	=link_to "Everytime,", "#{everytime_root}" 
+	which is a tool that allows you to bookmark and share
+	any moment within any movie or music.
+	It is dedicated to anyone whose job or passion relies on video or audio, such as
+	filmmakers, writers, music composers, journalists and many more!
+	
+%p
+	You can use it
+	= link_to "for free", "#{everytime_root}/subscribe"
+	= "!"
+	Or feel free to
+	= link_to "have a tour first", "#{everytime_root}/tour"
+	or
+	= link_to "try out the demo", "#{everytime_root}/demo"
+	first.
+	
+%p
+	One of the many great uses it can have is
+	= link_to "widgets.", "#{everytime_root}/widgets"
+	If you want to share your bookmarks publicly,
+	you can simply embed it into any website, such as this example:
+	
+
+.iframe_container
+	<iframe src="http://widget.everytimehq.com/embed/media/Tv1BIJxMRWfYtg83" allowtransparency="true" width="440" height="660"></iframe>
+	

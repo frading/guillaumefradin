@@ -1,9 +1,4 @@
-# to update the blog
-# 1. create a partial for it in views/posts/content
-# 2. create a post model: Post.create :title=>'new_press_section'
-# 3. Post.last.publish on dev enviroment for test
-# 4. commit, post still wont be visible on prod machine
-# 4. recreate and publish (Post.last.publish) on prod, then post will be visible
+
 
 class PostsController < ApplicationController
   

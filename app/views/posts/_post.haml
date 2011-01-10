@@ -9,10 +9,10 @@
 		
 	.links
 		- if post.previous_post
-			= link_to "<< older posts", post.previous_post
+			= link_to "<< #{post.previous_post.title.titleize}", post.previous_post
 			
 		- if post.more_recent_post
-			= link_to "more recent posts >>", post.more_recent_post
+			= link_to "#{post.more_recent_post.title.titleize} >>", post.more_recent_post
 		
 	%a{:class=>'img_link feed', :href=>feedburner_url}
 
