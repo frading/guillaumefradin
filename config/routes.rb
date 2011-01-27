@@ -9,6 +9,8 @@ Guillaumefradin::Application.routes.draw do
   resources :posts, :only=>[:show, :index]
   match 'feed', :to=>'posts#feed'
   
+  
+  match '*path' => 'application#route_not_found'
   #devise_for 	:users
 	#
 	#as :user do

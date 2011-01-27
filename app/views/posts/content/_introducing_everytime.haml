@@ -1,5 +1,5 @@
 - everytime_root = "http://www.everytimehq.com"
-- embed_root = "http://widget.everytimehq.com"
+- embed_root = Rails.env == 'production' ? "http://widget.everytimehq.com" : "http://localhost:3000" 
 
 -#%a{:class=>'img_link', :href=>everytime_root}
 -#	= image_tag '/images/everytime_logo.jpg', :width=>"70%"
@@ -30,7 +30,7 @@
 	
 
 .iframe_container
-	- token = "Tv1BIJxMRWfYtg83"
+	- token = Rails.env == 'production' ? "Tv1BIJxMRWfYtg83" : "zgc1yDQogh2jIRGX"
 	%script{:type=>'text/javascript', :src=>"#{embed_root}/embed/media/#{token}.js"}
 	
 	

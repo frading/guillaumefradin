@@ -6,7 +6,8 @@ atom_feed do |feed|
 	feed.entry(@post) do |post|
 
 		post.title(@post.title)
-		post.summary(render "posts/content/#{@post.partial}")
+		content = render "posts/content/#{@post.partial}"
+		post.summary(content.html_safe)
 
 	end
     
