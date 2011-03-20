@@ -1,9 +1,11 @@
 - everytime_root = "http://www.everytimehq.com"
 - embed_root = Rails.env == 'production' ? "http://widget.everytimehq.com" : "http://localhost:3000" 
+-#- embed_root = "http://widget.everytimehq.com" 
 
 -#%a{:class=>'img_link', :href=>everytime_root}
 -#	= image_tag '/images/everytime_logo.jpg', :width=>"70%"
-<script src='https://www.everytimehq.com/banners/aHKQ07MdiTW0VFlk/large.js' type='text/javascript'></script>
+- token = Rails.env == "production" ? "aHKQ07MdiTW0VFlk" : "bktfQJEBYt6qys3p"
+= javascript_include_tag "#{embed_root}/banners/#{token}/script.js"
 
 %p
 	I am very happy today to introduce
@@ -30,12 +32,12 @@
 	
 
 .iframe_container
-	- token = Rails.env == 'production' ? "Tv1BIJxMRWfYtg83" : "zgc1yDQogh2jIRGX"
-	%script{:type=>'text/javascript', :src=>"#{embed_root}/embed/media/#{token}.js"}
+	- token = Rails.env == 'production' ? "Tv1BIJxMRWfYtg83" : "ZsgnAkJaxau3t0A6"
+	= javascript_include_tag "#{embed_root}/embed/media/#{token}.js"
 	
 	
 .iframe_container
 	- token = "xZ4mW8i6NZkt0Mcl"
-	%script{:type=>'text/javascript', :src=>"#{embed_root}/embed/media/#{token}.js"}
+	= javascript_include_tag "#{embed_root}/embed/media/#{token}.js"
 
 	
