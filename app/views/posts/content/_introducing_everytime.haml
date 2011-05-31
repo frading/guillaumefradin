@@ -4,7 +4,7 @@
 
 -#%a{:class=>'img_link', :href=>everytime_root}
 -#	= image_tag '/images/everytime_logo.jpg', :width=>"70%"
-- token = Rails.env == "production" ? "z70gGL7Hj01rhS1a" : "bktfQJEBYt6qys3p"
+- token = Rails.env == "production" ? "1_wyQEH6swmKGcMgQd" : "1_wyQEH6swmKGcMgQd"
 = javascript_include_tag "#{embed_root}/banners/#{token}.js"
 
 %p
@@ -30,14 +30,13 @@
 	If you want to share your bookmarks publicly,
 	you can simply embed them into any website, such as those examples:
 	
-
 .iframe_container
-	- token = Rails.env == 'production' ? "362_QX0xQ8xc8spt7wGP" : "ZsgnAkJaxau3t0A6"
+	- token = Rails.env == 'production' ? "362_QX0xQ8xc8spt7wGP" : "362_QX0xQ8xc8spt7wGP"
 	= javascript_include_tag "#{embed_root}/embed/media/#{token}.js"
 	
 	
-.iframe_container
-	- token = "360_pg4BHKlm2EeWTY0B"
-	= javascript_include_tag "#{embed_root}/embed/media/#{token}.js"
+-#.iframe_container
+-#	- token = "360_pg4BHKlm2EeWTY0B"
+-#	= javascript_include_tag "#{embed_root}/embed/media/#{token}.js"
 
 	
