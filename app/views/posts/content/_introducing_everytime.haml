@@ -31,12 +31,13 @@
 	you can simply embed them into any website, such as those examples:
 	
 .iframe_container
+	- token = "360_pg4BHKlm2EeWTY0B"
+	= javascript_include_tag "#{embed_root}/embed/media/#{token}.js"
+	
+.iframe_container
 	- token = Rails.env == 'production' ? "362_QX0xQ8xc8spt7wGP" : "362_QX0xQ8xc8spt7wGP"
 	= javascript_include_tag "#{embed_root}/embed/media/#{token}.js"
 	
 	
-.iframe_container
-	- token = "360_pg4BHKlm2EeWTY0B"
-	= javascript_include_tag "#{embed_root}/embed/media/#{token}.js"
 
 	
