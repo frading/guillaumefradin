@@ -18,21 +18,18 @@
 %p
 	You can use it
 	= link_to "for free!", "#{everytime_root}/subscribe"
-	Or feel free to
-	= link_to "have a tour", "#{everytime_root}/tour"
-	or
-	= link_to "try out the demo", "#{everytime_root}/demo"
+	Or
+	= link_to "take a tour", "#{everytime_root}/tour."
 	first.
 	
 %p
 	One of the many great uses it can have is
 	= link_to "embedded widgets.", "#{everytime_root}/widgets"
 	If you want to share your bookmarks publicly,
-	you can simply embed them into any website, such as those examples:
+	you can simply embed them into any website, such as this example:
 	
 .iframe_container
-	- token = "360_pg4BHKlm2EeWTY0B"
-	= javascript_include_tag "#{embed_root}/embed/media/#{token}.js"
+	= javascript_include_tag 'http://widget.everytimehq.com/embed/media/45.js?width=500'
 	
 -# currently having 2 on same page crashes badly
 
