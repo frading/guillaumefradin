@@ -1,16 +1,17 @@
 Guillaumefradin::Application.routes.draw do
 
-  root :to => "home#news"
+	root :to => "home#index"
+  #root :to => "home#news"
   
-  %w{ directing vfx web press }.each do |name|
-  	match name => "home##{name}"
-  end
-
-  resources :posts, :only=>[:show, :index]
-  match 'feed', :to=>'posts#feed'
-  
-  
-  match '*path' => 'application#route_not_found'
+  #%w{ directing vfx web press }.each do |name|
+  #	match name => "home##{name}"
+  #end
+#
+  #resources :posts, :only=>[:show, :index]
+  #match 'feed', :to=>'posts#feed'
+  #
+  #
+  #match '*path' => 'application#route_not_found'
   #devise_for 	:users
 	#
 	#as :user do

@@ -3,21 +3,15 @@
 	%head
 		%title
 			Guillaume Fradin
-		= csrf_meta_tag
-		= raw(include_stylesheets :all)
-		= auto_discovery_link_tag :atom, feedburner_url
+		-#= csrf_meta_tag
+		-#= raw(include_stylesheets :all)
+		-#= auto_discovery_link_tag :atom, feedburner_url
+		%meta{:name=>"description", :content=>"Guillaume Fradin"}
+		%meta{:name=>"keywords", :content=>"Guillaume Fradin PrintMosaic Everytime Puppet"}
+		%meta{:name=>"author", :content=>"Guillaume Fradin"}
+		%meta{:name=>"viewport", :content=>"width=device-width, initial-scale=1"} 
+		= stylesheet_link_tag "application", :media => "all"
 		
 	%body
-		#root
-			.title_container
-				.title
-					GUILLAUME FRADIN
-			= render 'layouts/menu'
-	
-			.main
-				=yield
-			#root_footer
-
-		= render 'layouts/footer'
-		
-	= render 'layouts/js'	
+		.container
+			=yield

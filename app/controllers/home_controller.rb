@@ -1,19 +1,22 @@
 class HomeController < ApplicationController
   
-	def directing
-	end
+	# def directing
+	# end
 	
-	def vfx
-	end
+	# def vfx
+	# end
 	
-	def web
-	end
+	# def web
+	# end
 	
-	def press
-	end
+	# def press
+	# end
 	
-	def news
-		@post = Post.where(:published=>true).last
+	# def news
+	# 	@post = Post.where(:published=>true).last
+	# end
+
+	def index
 	end
 	
 end
