@@ -1,12 +1,12 @@
 -#= render 'layouts/elements/typekit'
 
-= javascript_include_tag "jquery-1.4.2.js"
+-#= javascript_include_tag "jquery-1.4.2.js"
 
-= javascript_tag do 
-	$(document).ready(function(){
-	e = $('.email');
-	e.html( e.attr('name') + '@' + e.attr('domain') );
-	});
+-#= javascript_tag do 
+-#	$(document).ready(function(){
+-#	e = $('.email');
+-#	e.html( e.attr('name') + '@' + e.attr('domain') );
+-#	});
 
 - if Rails.env == 'production'
 	= render 'layouts/elements/google_analytics'
