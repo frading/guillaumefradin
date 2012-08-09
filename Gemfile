@@ -35,14 +35,14 @@ group :assets do
 
 	gem 'uglifier', '>= 1.0.3'
 end
-group :development do
-	gem 'sqlite3'
-	gem 'tzinfo'
-	gem 'linecache19'
-	gem 'ruby-debug19'
+# group :development do
+# 	#gem 'sqlite3'
+# 	#gem 'tzinfo'
+# 	#gem 'linecache19'
+# 	#gem 'ruby-debug19'
 
-	gem 'sextant'
-end
+# 	#gem 'sextant'
+# end
 group :production do
 	gem 'pg'
 end
