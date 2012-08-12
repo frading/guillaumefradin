@@ -7,3 +7,12 @@ development:
   password: password
   
 
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: guillaumefradin_dev
+  pool: 5
+  username: frading
+  password: password
+  
+
