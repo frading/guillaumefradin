@@ -1,6 +1,7 @@
 Guillaumefradin::Application.routes.draw do
 
 	root :to => "home#index"
+	match "test" => "home#test"
   #root :to => "home#news"
   
   #%w{ directing vfx web press }.each do |name|
