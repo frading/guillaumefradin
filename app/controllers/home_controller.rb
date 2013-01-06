@@ -21,5 +21,9 @@ class HomeController < ApplicationController
 
 	def test
 	end
+
+	def redirect
+		redirect_to root_url
+	end
 	
 end

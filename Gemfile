@@ -1,18 +1,11 @@
-source 'http://rubygems.org'
-gem 'rails', '3.2.7'
-#gem 'pg', '0.9.0'
+source 'https://rubygems.org'
+ruby "1.9.3" 
 
-# gem 'awesome_print', '0.2.0'
-# #gem 'devise', '1.1.3'
-
-# gem 'haml', '3.0.21'
-# gem 'heroku-autoscale', '0.2.2'
-
-# gem 'jammit'
-# gem 'compass'
-# gem 'ruby-debug'
-# gem 'yui-compressor'
-# gem 'closure-compiler'
+gem 'rails', '3.2.8'
+gem 'awesome_print'
+gem 'haml'
+gem 'thin'
+gem 'pg'
 
 
 
@@ -35,21 +28,3 @@ group :assets do
 
 	gem 'uglifier', '>= 1.0.3'
 end
-# group :development do
-# 	#gem 'sqlite3'
-# 	#gem 'tzinfo'
-# 	#gem 'linecache19'
-# 	#gem 'ruby-debug19'
-
-# 	#gem 'sextant'
-# end
-group :production do
-	gem 'pg'
-end
-
-#gem 'activeadmin'
-gem 'awesome_print'
-gem 'haml'
-
-gem 'thin'
-
