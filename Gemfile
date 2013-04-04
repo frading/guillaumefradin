@@ -8,6 +8,9 @@ gem 'thin'
 gem 'pg'
 
 
+group :development do
+	gem 'sextant'
+end
 
 group :assets do
 	gem 'sass-rails'#,   '~> 3.2.3'
