@@ -1,8 +1,13 @@
+
 Guillaumefradin::Application.routes.draw do
 
 	root :to => "home#index"
 
-	match "scripts/seed" => "scripts#seed"
+	match "scripts/seed" => "scripts#seed" # keep for legacy
+
+	match "film/seeds" => "film/seeds#index"
+	match "film/seeds/presentation" => "film/seeds#presentation"
+	match "film/seeds/script" => "film/seeds#script"
 
 	match "test" => "home#test"
 
