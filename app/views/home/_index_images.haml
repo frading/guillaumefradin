@@ -1,0 +1,65 @@
+.Padder
+.row
+	.span12
+		%p.page_title Guillaume Fradin
+		%p.links
+			= link_to "imdb", "http://www.imdb.me/gui"
+			|
+			= link_to "vimeo", "http://www.vimeo.com/frading"
+			|
+			= link_to "linkedin", "http://www.linkedin.com/profile/view?id=4330677"
+			| 
+			= link_to "email", "guillaumefradin@gmail.com"
+.row
+	.span12
+		%p.section_title Directing
+	.span2
+		%a.thumbnail_link{:href=>"http://www.vimeo.com/frading/puppet", :style=>"background-image:url(#{asset_path 'puppet.png'})"}
+			.thumbnail_subtitle
+				%span Puppet
+	.span2
+		%a.thumbnail_link{:href=>film_dev_path, :style=>"background-image:url(#{asset_path 'seeds.jpg'})"}
+			.thumbnail_subtitle
+				%span Seeds
+
+.row
+	.span12
+		%p.section_title
+			Visual Effects
+			%span.subtitle
+				= link_to "(showreel)", "https://www.everytimehq.com/media/1442-VFX-showreel-2007"
+	.span2
+		%a.thumbnail_link{:href=>"http://www.imdb.com/title/tt0499549", :style=>"background-image:url(#{asset_path 'avatar.jpg'})"}
+			.thumbnail_subtitle
+				%span Avatar
+	.span2
+		%a.thumbnail_link{:href=>"http://www.imdb.com/title/tt1300854", :style=>"background-image:url(#{asset_path 'iron_man_3.jpg'})"}
+			.thumbnail_subtitle
+				%span Iron Man 3
+	.span2
+		%a.thumbnail_link{:href=>"http://www.imdb.com/title/tt1454468", :style=>"background-image:url(#{asset_path 'gravity.jpeg'})"}
+			.thumbnail_subtitle
+				%span Gravity
+
+.row
+	.span12
+		%p.section_title
+			Web
+	.span2
+		%a.thumbnail_link{:href=>"http://everytimehq.com", :style=>"background-image:url(#{asset_path 'everytime.png'})"}
+			.thumbnail_subtitle
+				%span Everytime
+	.span2
+		%a.thumbnail_link{:href=>"http://printmosaic.com", :style=>"background-image:url(#{asset_path 'printmosaic.jpg'})"}
+			.thumbnail_subtitle
+				%span PrintMosaic
+
+-#.row
+-#	.span12
+-#		%ul.links
+-#			%li
+-#				%a{:href=>"http://www.imdb.me/gui"}= image_tag 'links/imdb.png'
+-#				%a{:href=>"http://www.imdb.me/gui"}= image_tag 'links/linkedin.png'
+-#				%a{:href=>"http://www.imdb.me/gui"}= image_tag 'links/vimeo.png'
+-#				%a{:href=>"http://www.imdb.me/gui"}= image_tag 'links/email.png'
+

@@ -1,6 +1,9 @@
 @import "bootstrap_and_overrides"
+@import "compass/css3/border-radius"
+@import "compass/css3/opacity"
 
 $normal_color: #666
+$very_faded_color: #eee
 
 body
 	:color $normal_color
@@ -8,19 +11,43 @@ body
 	:padding
 		:top 20px
 
-.title
+.page_title
 	:font-size 20px
-	//:color #484
 
 
 .section_title
-	//:color #966
 	:font-weight bold
 	:font-size 16px
+	:border-bottom 2px $very_faded_color solid
+	:margin
+		:top 20px
+		:bottom 10px
 
-.section_content
-	:font-size 14px
-	a
-		:color $normal_color
-		&:hover
-			:color $normal_color
+
+.thumbnail_link
+	+border-radius(4px)
+	:display block
+	:width 150px
+	:height 200px
+	:position relative
+	:color red
+	.thumbnail_subtitle
+		:position absolute
+		:bottom 0px
+		:width 100%
+		:background-color white
+		+opacity(0.5)
+		:padding
+			:top 10px
+			:bottom 10px
+		span
+			:padding
+				:left 10px
+				:right 10px
+
+
+	&:hover
+		:color red
+		.thumbnail_subtitle
+			+opacity(0.9)
+

@@ -1,6 +1,8 @@
 .Padder
-.row
-	.span6.offset3
+.row	
+	.span2.offset1
+		= image_tag 'seeds.jpg'
+	.span6
 		%p.title Seeds
 		%p By Guillaume Fradin
 
@@ -8,3 +10,8 @@
 			= link_to "full script", film_seeds_script_path
 		%p
 			= link_to "presentation", film_seeds_presentation_path
+
+
+.row
+	.span2.offset1
+		= link_to "< home", root_path

@@ -1,0 +1,33 @@
+.Padder
+.row
+	.span6.offset3
+		%p.title Guillaume Fradin
+
+		%p
+			%span.section_title Web
+			%span.section_content
+				= link_to "PrintMosaic", "http://www.printmosaic.com/"
+				|
+				= link_to "Everytime", "http://www.everytimehq.com/"
+
+		%p
+			%span.section_title Film
+			%span.section_content
+				= link_to "Puppet", "https://vimeo.com/13247598"
+				|
+				= link_to "Vfx reel", "https://vimeo.com/16082893"
+				|
+				= link_to "imdb", "http://www.imdb.com/name/nm3070328/"
+
+
+		%p
+			%span.section_title Contact
+			%span.section_content
+				= link_to "linkedin", "http://www.linkedin.com/in/guillaumefradin"
+				guillaumefradin AT gmail.com
+
+
+		%p
+			-#.everytime_widget{:data=>{:id=>'1179', 'init-height'=>'448', :type=>'media', :width=>'400'}}
+			.everytime_widget{:data=>{:id=>'1442', 'init-height'=>'448', :type=>'media', :width=>'600'}}
+			= javascript_include_tag "https://www.everytimehq.com/embed/script.js"

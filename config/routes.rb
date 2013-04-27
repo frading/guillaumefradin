@@ -5,6 +5,7 @@ Guillaumefradin::Application.routes.draw do
 
 	match "scripts/seed" => "scripts#seed" # keep for legacy
 
+	match "film/dev" => "film/dev#index"
 	match "film/seeds" => "film/seeds#index"
 	match "film/seeds/presentation" => "film/seeds#presentation"
 	match "film/seeds/script" => "film/seeds#script"
