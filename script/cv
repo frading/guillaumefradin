@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+dest = "~/Desktop/guillaumefradin_cv_fr_2013.pdf"
+
+`script/wkhtmltopdf-amd64 http://127.0.0.1:5000/cv/fr #{dest}`
+`evince #{dest}`
