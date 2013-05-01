@@ -7,6 +7,7 @@ gem 'haml'
 gem 'thin'
 gem 'pg'
 
+#gem 'wicked_pdf'
 
 group :development do
 	gem 'sextant'

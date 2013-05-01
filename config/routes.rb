@@ -10,6 +10,8 @@ Guillaumefradin::Application.routes.draw do
 	match "film/seeds/presentation" => "film/seeds#presentation"
 	match "film/seeds/script" => "film/seeds#script"
 
+	match "cv/fr" => "cv#fr"
+
 	match "test" => "home#test"
 
 	match '*path' => "home#redirect"

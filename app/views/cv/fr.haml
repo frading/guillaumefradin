@@ -1,0 +1,247 @@
+-# HOW TO UPDATE CV
+-# wkhtmltopdf http://127.0.0.1:5000/cv/fr guillaumefradin.pdf; evince guillaumefradin.pdf
+
+-# HOW TO INSTALL wkhtmltopdf
+-# sudo apt-get install wkhtmltopdf (or prefer using static version, which will keep the <a> links)
+-# prince can also be useful: http://www.princexml.com/
+
+.cv
+	%table.cv_header
+		%tr
+			%td.cv_contact_details
+				.cv_name Guillaume Fradin
+				.cv_address 5 mendip House, E2 0JW, Angleterre
+				.cv_tel +44 7 429 659 252
+				.cv_email= link_to "guillaumefradin@gmail.com", "mailto:guillaumefradin@gmail.com"
+				.cv_website= link_to "http://guillaumefradin.com", "http://guillaumefradin.com"
+			%td.cv_title
+				%p REALISATEUR /
+				%p INFOGRAPHISTE 3D
+				%p FREELANCE
+
+
+	.cv_section_title EXPERIENCE
+
+	%table.cv_section_description
+		%tr
+			%td.dates
+				.start Fev 2013 -
+				.end Avril 2013
+			%td
+				.cv_item_title
+					= link_to "Weta Digital", "http://www.wetafx.co.nz"
+					= "- Senior FX TD sur"
+					= link_to "Iron Man 3", "http://www.imdb.com/title/tt1300854"
+				.cv_item_detail
+					Participation aux effets de la séquence finale de
+					= link_to "Iron Man 3", "http://www.imdb.com/title/tt1300854"
+
+		%tr
+			%td.dates
+				.start Fev 2012 -
+				.end Aout 2012
+			%td
+				.cv_item_title
+					= link_to "Framestore", "http://www.framestore.com"
+					= "- Lead FX TD sur"
+					= link_to "Gravity", "http://www.imdb.com/title/tt1454468"
+				.cv_item_detail
+					Supervision des effets de la séquence finale du film
+					= link_to("Gravity", "http://www.imdb.com/title/tt1454468")+","
+					= raw "d'"+link_to("Alfonso Cuarón", "http://www.imdb.com/name/nm0190859")
+
+		%tr
+			%td.dates
+				.start Aout 2011 -
+				.end Fev 2012
+			%td
+				.cv_item_title
+					= link_to "Weta Digital", "http://www.wetafx.co.nz"
+					= "- Lead FX TD sur"
+					= link_to "Abraham Lincoln: Vampire Hunter", "http://www.imdb.com/title/tt1611224"
+				.cv_item_detail
+					Supervision de 9 personnes, conception des outils design du look pour la séquence de foule de chevaux.
+
+		%tr
+			%td.dates
+				.start Mars 2009 -
+				.end Oct 2009
+			%td
+				.cv_item_title
+					= link_to "Framestore", "http://framestore.com"
+					= "- Lead FX TD sur"
+					= link_to "Avatar", "http://www.imdb.com/title/tt0499549"
+					de
+					= link_to "James Cameron", "http://www.imdb.com/name/nm0000116"
+				.cv_item_detail
+					Supervision de 4 personnes, conception des outils et design du look pour des effets variés: arbres, réacteurs, impacts de balles, feu, nuages.
+
+		%tr
+			%td.dates
+				.start Jan 2008 -
+				.end Dec 2008
+			%td
+				.cv_item_title
+					= link_to "Eclair Lab", "http://www.eclair.fr/"
+					= "- Lead FX TD"
+				.cv_item_detail
+					Conception et réalisation des effets sur les films
+					= link_to("Blood: The Last Vampire", "http://www.imdb.com/title/tt0806027")+","
+					= link_to "Laylat El-Baby Doll", "http://www.imdb.com/title/tt1243374"
+					et
+					= link_to "Hadewijch", "http://www.imdb.com/title/tt1257562"
+
+		%tr
+			%td.dates
+				.start Mai 2005 -
+				.end Juil 2007
+			%td
+				.cv_item_title
+					= link_to "Court-métrage Pantin", "https://vimeo.com/frading/puppet"
+					= "- Scénariste, réalisateur, producteur"
+				.cv_item_detail
+					Court-métrage de 36 minutes, tourné en HD. Gestion du recrutement de l'équipe et de la construction du décor.
+
+		%tr
+			%td.dates
+				.start Aout 2007
+			%td
+				.cv_item_title
+					= link_to "La Maison", "http://www.alamaison.fr"
+					= "- infographiste/superviseur"
+				.cv_item_detail
+					Animation et supervision du rendu sur une publicité pour Peugeot 308, avec le logiciel Houdini.
+
+		%tr
+			%td.dates
+				.start Fév 2006 -
+				.end Juin 2007
+
+			%td
+				.cv_item_title
+					= link_to "Framestore-CFC", "http://www.framestore.com"
+					= "- infographiste, département publicités"
+				.cv_item_detail
+					Conception et réalisation des effets sur les publicités British Airways, Canon, Rexona, Lux et Smirnoff.
+
+		%tr
+			%td.dates
+				.start Déc 2005 -
+				.end Jan 2006
+
+			%td
+				.cv_item_title
+					= link_to "Realise Studio", "http://www.realisestudio.com"
+					= "- infographiste"
+				.cv_item_detail
+					Conception des effets d’un clip vidéo et d’une publicité avec Houdini.
+
+		-#%tr
+		-#	%td.dates
+		-#		.start Déc 2004 -
+		-#		.end Mai 2005
+		-#	%td
+		-#		.cv_item_title
+		-#			= link_to "Jim Henson Creature Shop", "http://www.creatureshop.com"
+		-#			= "- infographiste"
+		-#		.cv_item_detail
+		-#			Conception et création d’effets spéciaux du film "Water Giant" à l’aide des logiciels Houdini et Realflow dans une équipe de 9 personnes. Ces effets recréaient principalement l’interaction d’un monstre marin avec l’eau l’environnant.
+
+		%tr
+			%td.dates
+				.start Oct 2003 -
+				.end Déc 2004
+			%td
+				.cv_item_title
+					= link_to "Framestore-CFC", "http://www.framestore.com"
+					= "- Département R&D "
+				.cv_item_detail
+					Conception et implémentation d’un logiciel propriétaire de gestion de dépendences de tâches, utilisé par plus de 100 artistes, sur les films
+					= link_to("Troy", "http://www.imdb.com/title/tt0332452")
+					et
+					= link_to("Harry Potter 3", "http://www.imdb.com/title/tt0241527")+"."
+
+		%tr
+			%td.dates
+				.start Jan 2002 -
+				.end Jan 2003
+
+			%td
+				.cv_item_title
+					= link_to "Court-métrage Double Dose", "http://www.guillaumefradin.com"
+					= "- Scénariste, réalisateur, producteur"
+				.cv_item_detail
+					Réalisation d’un court-métrage "Double Dose" (8') mêlant acteur réels avec personnages en 3D. 
+
+		%tr
+			%td.dates
+				.start 2001
+
+			%td
+				.cv_item_title
+					= link_to "Court-métrage No Exit", "http://www.guillaumefradin.com"
+					= "- Scénariste, réalisateur, producteur"
+				.cv_item_detail
+					Réalisation d'un court-métrage "No Exit" (10') en 3D. 
+
+
+	.cv_section_title FORMATION
+
+	%table.cv_section_description
+		%tr
+			%td.dates
+				.start 1996 -
+				.end 2001
+
+			%td
+				.cv_item_title
+					= link_to "ESIEE PARIS", "http://www.esiee.fr"
+					= "- majeur informatique"
+				.cv_item_detail
+					Obtention du diplôme avec une moyenne de 16,19/20.
+
+		%tr
+			%td.dates
+				.start Juil 2000
+
+			%td
+				.cv_item_title
+					Licence d'informatique
+				.cv_item_detail
+					Option traitement du signal, en cumulatif avec l'Université de Marne La Vallée.
+
+		%tr
+			%td.dates
+				.start Juil 1996
+
+			%td
+				.cv_item_title
+					Baccalauréat S avec mention
+				.cv_item_detail
+					Spécialité mathématiques au Lycée Kléber à Strasbourg.
+
+
+	.cv_section_title COMPETENCES
+
+	%table.cv_section_description
+		%tr
+			%td.c2 Montage
+			%td.c3 Avid, Premiere
+		%tr
+			%td.c2 Logiciels 3D
+			%td.c3 Houdini, mantra, RenderMan, Realflow, Maya
+		%tr
+			%td.c2 Logiciels 2D
+			%td.c3 Nuke, Gimp, Shake, Illustrator, AfterEffects, Photoshop
+		-#%tr
+		-#	%td.c2 Programmation
+		-#	%td.c3 Ruby on rails, C/C++, python, hscript, vex, Houdini HDK, perl, shake API, Maya API, html, OpenGL
+		-#%tr
+		-#	%td.c2 Environnements
+		-#	%td.c3 Linux, windows XP
+		%tr
+			%td.c2 Langues
+			%td.c3 Français (maternel), Anglais (courant), Espagnol (débutant)
+		%tr
+			%td.c2 Sports
+			%td.c3 Roller, roller hockey, escalade, squash, natation, cyclisme
