@@ -6,3 +6,7 @@ Personal Website
 # 3. Post.last.publish on dev enviroment for test
 # 4. commit, post still wont be visible on prod machine
 # 4. recreate and publish (Post.last.publish) on prod, then post will be visible
+
+
+# to update the cv
+# script/cv
