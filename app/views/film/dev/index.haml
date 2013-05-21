@@ -1,14 +1,17 @@
 .Padder
-.row
-	.span6.offset3
-		%p.title Seeds
-		%p By Guillaume Fradin
+.film
+	.row	
+		.span4.offset2
+			= image_tag 'projects/film/seeds/moon.jpg'
+			= image_tag 'projects/film/seeds/panic_room.jpg'
+		.span3
+			%h3.title Seeds
+			%p By Guillaume Fradin
 
-		%p
-			in development
+			%p
+				Screenplay and synopsis available on request
 
-		%p
-			= image_tag 'seeds.jpg'
 
-		%p
-			= link_to "home", root_path
+	.row.film_footer
+		.span2.offset1
+			= link_to "< home", root_path

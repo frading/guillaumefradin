@@ -1,17 +1,23 @@
 .Padder
-.row	
-	.span2.offset1
-		= image_tag 'seeds.jpg'
-	.span6
-		%p.title Seeds
-		%p By Guillaume Fradin
+.film
+	.row	
+		.span4.offset2
+			= image_tag 'projects/film/seeds/moon.jpg'
+			= image_tag 'projects/film/seeds/panic_room.jpg'
+		.span3
+			%h3.title Seeds
+			%p By Guillaume Fradin
 
-		%p
-			= link_to "full script", film_seeds_script_path
-		%p
-			= link_to "presentation", film_seeds_presentation_path
+			%p
+				%a.btn.btn-success{:href=>film_seeds_script_path}
+					%i.icon-white.icon-download
+					Download Screenplay
+			%p
+				%a.btn.btn-primary{:href=>film_seeds_presentation_path}
+					%i.icon-white.icon-download
+					Download Presentation
 
 
-.row
-	.span2.offset1
-		= link_to "< home", root_path
+	.row.film_footer
+		.span2.offset1
+			= link_to "< home", root_path
