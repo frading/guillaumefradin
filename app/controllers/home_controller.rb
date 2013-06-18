@@ -16,6 +16,7 @@ class HomeController < ApplicationController
 	# 	@post = Post.where(:published=>true).last
 	# end
 
+
 	def index
 	end
 
@@ -24,6 +25,9 @@ class HomeController < ApplicationController
 
 	def redirect
 		redirect_to root_url
+	end
+
+	def printmosaic
 	end
 	
 end

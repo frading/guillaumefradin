@@ -14,6 +14,9 @@ Guillaumefradin::Application.routes.draw do
 
 	match "test" => "home#test"
 
+	match "printmosaic" => "printmosaic#index"
+
 	match '*path' => "home#redirect"
+
 	
 end
