@@ -1,27 +1,2 @@
-- printmosaic_root_url = "https://www.printmosaic.com"
+= render :partial=>'printmosaic/pro', :locals=>{:printmosaic_root_url => "http://printmosaic.com", :printmosaic_key=>"10nnnadcqzfguk1qumizjtuqy0bjeszu"}
 
-.row-fluid
-	.span2
-		%br
-		%br
-		.alert.alert-success
-			%h3 Pro Account Example
-			%p
-				This webpage demonstrates what printmosaic can look like once embedded on your site.
-
-		%ul
-			%li
-				%strong custom title
-				You can see the page title is different. It will be the same as your account name.
-			%li
-				%strong always on your site
-				People trying printmosaic from here will always stay on this site.
-
-		%br
-		%a.btn.btn-primary.btn-large{:href=>"#{printmosaic_root_url}/pro"}
-			Get Your Pro Account
-			%i.icon-white.icon-chevron-right
-
-	.span10{:style=>"background-color:red;padding:5px;height:1000px"}
-		-#%iframe{:src=>"http://www-5.printmosaic.local:5000/", :width=>1200, :height=>1000}
-		= javascript_include_tag('https://www.printmosaic.com/pro/accounts/10nnnadcqzfguk1qumizjtuqy0bjeszu.js')

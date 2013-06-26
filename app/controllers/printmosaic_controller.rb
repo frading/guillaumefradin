@@ -4,5 +4,8 @@ class PrintmosaicController < ApplicationController
 
 	def index
 	end
+
+	def dev
+	end
 	
 end
