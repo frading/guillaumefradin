@@ -1,65 +1,12 @@
-@import "bootstrap_and_overrides"
-@import "compass/css3/border-radius"
-@import "compass/css3/opacity"
+#mainmenu_container
+	:position fixed
+	:top 50px
 
-$normal_color: #666
-$very_faded_color: #eee
-$bg_color: #fff
-
-body
-	:color $normal_color
-.Padder
-	:padding
-		:top 20px
-
-.page_title
-	:font-size 20px
-
-
-.section_title
-	:font-weight bold
-	:font-size 16px
-	:border-bottom 2px $very_faded_color solid
+.mainmenu_entry
 	:margin
-		:top 20px
-		:bottom 10px
+		:bottom 100px
 
 
-.thumbnail_link
-	+border-radius(4px)
-	:display block
-	:width 150px
-	:height 200px
-	:position relative
-	:color red
-	.thumbnail_subtitle
-		:position absolute
-		:bottom 0px
-		:width 100%
-		:background-color white
-		+opacity(0.5)
-		:padding
-			:top 10px
-			:bottom 10px
-		span
-			:padding
-				:left 10px
-				:right 10px
-
-
-	&:hover
-		:color red
-		.thumbnail_subtitle
-			+opacity(0.9)
-
-
-
-.film
-	.film_footer
-		:margin
-			:top 20px
-		:padding
-			:top 5px
-		:border
-			:top 1px solid $bg_color - #111
-		:font-size 11px
+.contact_details
+	:margin
+		:bottom 40px

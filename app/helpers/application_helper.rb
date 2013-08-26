@@ -9,4 +9,9 @@ module ApplicationHelper
 		'http://feeds.feedburner.com/GuillaumeFradin'
 	end
 	
+	def vimeo(video_id)
+		render :partial=>'home/entries/vimeo', :locals=>{:video_id=>video_id}
+	end
+
+
 end

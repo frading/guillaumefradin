@@ -1,0 +1,42 @@
+
+!!!
+%html
+	= render 'layouts/head'
+		
+	%body{data: {spy: :affix, target: "#mainmenu" }}
+		.container
+			.row
+				- entries = {}
+				- entries[:puppet] = "Puppet - Short Film"
+				- entries[:cliff] = "The Cliff - Feature Film"
+				- entries[:pest] = "Pest - Feature Film"
+				- entries[:vfx] = "VFX Reel"
+				.span3
+
+					#mainmenu_container
+						.contact_details
+							%p.page_title Guillaume Fradin - Filmmaker
+							%p.links
+								= link_to "imdb", "http://www.imdb.me/gui"
+								|
+								= link_to "vimeo", "http://www.vimeo.com/frading"
+								|
+								= link_to "linkedin", "http://www.linkedin.com/profile/view?id=4330677"
+								| 
+								= mail_to "guillaumefradin@gmail.com", "email"
+
+						%ul.nav.nav-list#mainmenu
+							- entries.each do |k,v|
+								%li
+									%a{ href: "##{k}"}
+										%i.icon-chevron-right
+										= v
+
+				.span9.offset3
+					- entries.each do |k,v|
+						.mainmenu_entry{id: k}
+							%h2= v
+							= render :partial=>"home/entries/#{k}", :locals=>{:id=> k, :title=>v}
+
+
+	= render 'layouts/js'

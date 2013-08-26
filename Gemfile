@@ -19,13 +19,16 @@ group :assets do
 	gem 'jquery-rails'
 	gem 'jquery-mobile-rails'
 	gem 'compass-rails'
+
+	#gem 'execjs'
 	
 	# this coffescript version is important
 	# otherwise the js files containing the word "arguments"
 	# will not compile...
 	gem 'coffee-script-source', '1.2.0'
 	#gem 'compass_twitter_bootstrap', '2.0.7'
-	gem 'twitter-bootstrap-rails', '2.0.7'
+	gem 'twitter-bootstrap-rails'
+	#gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :github => 'anjlab/bootstrap-rails'
 	
 	# See https://github.com/sstephenson/execjs#readme for more supported runtimes
 	gem 'therubyracer'
