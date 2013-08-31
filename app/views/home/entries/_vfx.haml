@@ -1,7 +1,7 @@
 
 %div
 	%p
-		This vfx reel has not been updated since 2007. It does not include my work at
+		This vfx reel has not been updated since 2007. It does not include my work as a Lead FX TD at
 		=  link_to "Framestore", "http://www.framestore.com"
 		or
 		= link_to "Weta Digital", "http://www.wetafx.co.nz"
@@ -10,8 +10,18 @@
 		and
 		= link_to("Gravity", "http://www.imdb.com/title/tt1454468")
 		amongst others.
+		See my
+		= link_to("Imdb Credits", "http://imdb.me/gui")
+		for more details.
 		
+.row
+	.span2
+		%a.img-link{href: "http://www.imdb.com/title/tt0499549"}
+			%img{src: '/assets/avatar.jpg', alt: 'Avatar'}
+		%a.img-link{href: "http://www.imdb.com/title/tt1454468"}
+			%img{src: '/assets/gravity.jpeg', alt: 'Gravity'}
 
+	.span7
 
-%div
-	= vimeo(16082893)
+		%div
+			= vimeo(16082893, width: 660, height: 520)

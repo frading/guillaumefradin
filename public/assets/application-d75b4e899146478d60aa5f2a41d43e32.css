@@ -2072,7 +2072,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("/assets/twitter/bootstrap/glyphicons-halflings.png");
+  background-image: url("/assets/twitter/bootstrap/glyphicons-halflings-a82b35a9c60cb316f4ef9a62a841e19b.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -2085,7 +2085,7 @@ table .span24 {
   *margin-left: 0;
 }
 .icon-white {
-  background-image: url("/assets/twitter/bootstrap/glyphicons-halflings-white.png");
+  background-image: url("/assets/twitter/bootstrap/glyphicons-halflings-white-ab46f69d5b87307045873a45db675dc8.png");
 }
 .icon-glass {
   background-position: 0      0;
@@ -7386,8 +7386,8 @@ body {
     */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/assets/fontawesome-webfont.eot");
-  src: url('@{@fontAwesomeEotPath}?#iefix') format('embedded-opentype'), url("/assets/fontawesome-webfont.woff") format('woff'), url("/assets/fontawesome-webfont.ttf") format('truetype'), url('@{@fontAwesomeSvgzPath}#FontAwesomeRegular') format('svg'), url('@{@fontAwesomeSvgPath}#FontAwesomeRegular') format('svg');
+  src: url("/assets/fontawesome-webfont-1c92f2ec4a37f49051c7a082df84bfd4.eot");
+  src: url('@{@fontAwesomeEotPath}?#iefix') format('embedded-opentype'), url("/assets/fontawesome-webfont-1679cbf8eded17498a6c3cefe4236121.woff") format('woff'), url("/assets/fontawesome-webfont-c15c315b7841fb5493b494d2fb92430f.ttf") format('truetype'), url('@{@fontAwesomeSvgzPath}#FontAwesomeRegular') format('svg'), url('@{@fontAwesomeSvgPath}#FontAwesomeRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }

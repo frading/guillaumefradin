@@ -1,1 +1,4 @@
-%iframe{src:"//player.vimeo.com/video/#{video_id}", width: 870, height: 600, frameborder: 0, webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
+- width = options[:width] || 870
+- height = options[:height] || width * 0.58
+
+%iframe{src:"//player.vimeo.com/video/#{video_id}", width: width, height: height, frameborder: 0, webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
