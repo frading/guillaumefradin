@@ -15,13 +15,15 @@
 		for more details.
 		
 .row
-	.span2
+	.column.medium-2
 		%a.img-link{href: "http://www.imdb.com/title/tt0499549"}
 			%img{src: '/assets/avatar.jpg', alt: 'Avatar'}
 		%a.img-link{href: "http://www.imdb.com/title/tt1454468"}
 			%img{src: '/assets/gravity.jpeg', alt: 'Gravity'}
 
-	.span7
+	.column.medium-10
 
 		%div
-			= vimeo(16082893, width: 660, height: 520)
+			-#= vimeo(16082893, width: 660, height: 520)
+			= everytime_media(1442, width: "100%", height: 200)
+			= everytime_widgets_js

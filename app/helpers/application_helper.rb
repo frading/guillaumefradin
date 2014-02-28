@@ -13,5 +13,21 @@ module ApplicationHelper
 		render :partial=>'home/entries/vimeo', locals: {video_id: video_id, options: options}
 	end
 
+	def everytime_server
+		#Rails.env.development? ? "http://localhost:5000" : "https://www.everytimehq.com"
+		"https://www.everytimehq.com"
+	end
+
+	def everytime_widgets_js
+		javascript_include_tag "#{everytime_server}/embed/script.js"
+	end
+
+	def everytime_media(id, options={})
+		options[:id] = id
+		options[:widget] ||= 400
+		options[:height] ||= 200
+		render partial: 'home/entries/everytime_media', locals: options
+	end
+
 
 end

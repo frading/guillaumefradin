@@ -1,7 +1,7 @@
 
 Guillaumefradin::Application.routes.draw do
 
-	root :to => "home#index"
+	root to: "home#index"
 
 	# match "scripts/seed" => "scripts#seed" # keep for legacy
 
@@ -10,14 +10,14 @@ Guillaumefradin::Application.routes.draw do
 	# match "film/seeds/presentation" => "film/seeds#presentation"
 	# match "film/seeds/script" => "film/seeds#script"
 
-	match "cv/fr" => "cv#fr"
+	get "cv/fr" => "cv#fr"
 
 	# match "test" => "home#test"
 
 	# match "printmosaic" => "printmosaic#index"
 	# match "printmosaic/dev" => "printmosaic#dev"
 
-	match '*path' => "home#redirect"
+	get '*path' => "home#redirect"
 
 	
 end

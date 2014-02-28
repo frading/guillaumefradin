@@ -3,7 +3,7 @@
 %html
 	= render 'layouts/head'
 		
-	%body{data: {spy: :affix, target: "#mainmenu" }}
+	%body
 		.container
 			.row
 				- entries = {}
@@ -11,11 +11,15 @@
 				- entries[:cliff] = "The Cliff - Feature Film"
 				- entries[:pest] = "Pest - Feature Film"
 				- entries[:vfx] = "VFX Reel"
-				.span3
+				.column.medium-3
 
 					#mainmenu_container
+						-# => {data: {magellan: {expedition: "fixed"}}}
 						.contact_details
 							%p.page_title Guillaume Fradin - Filmmaker
+							-#%dl.sub-nav
+							-#	%dd{data: {magellan: {arrival: "build"}}}
+
 							%p.links
 								= link_to "imdb", "http://www.imdb.me/gui"
 								|
@@ -32,7 +36,7 @@
 										%i.icon-chevron-right
 										= v
 
-				.span9.offset3
+				.column.medium-9.medium-offset-3
 					- entries.each do |k,v|
 						.mainmenu_entry{id: k}
 							%h2= v

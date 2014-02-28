@@ -77,6 +77,6 @@ Guillaumefradin::Application.configure do
   
   # needs to be set up since I am using cedar stack
 
-
+  config.eager_load = true
 
 end

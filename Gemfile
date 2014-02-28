@@ -1,41 +1,48 @@
 source 'https://rubygems.org'
-#ruby "1.9.3" 
+ruby "2.1.0"
+gem 'rails', '4.1.0.rc1'
 
-gem 'rails', '3.2.11'
-gem 'awesome_print'
-gem 'haml'
-gem 'thin'
 gem 'pg'
 
-#gem 'twitter-bootstrap-rails'
+gem 'sass-rails'
+gem 'coffee-rails'
+gem 'therubyracer'
 
-#gem 'wicked_pdf'
+group :production do
+	gem 'rails_12factor'
+end
 
 group :development do
-	gem 'sextant'
+	gem 'tzinfo'
+	# gem 'linecache19'
+	# gem 'ruby-debug19'
+	#gem 'sextant'
+	#gem 'heroku_san'
+	#gem 'tconsole' #maybe try that to have loading faster than with spork?
+	gem "letter_opener"
+	#gem 'mail_view', :git => 'https://github.com/37signals/mail_view.git'
+	#gem 'roadie'
+
+	# this causes exception when trying to create a user. Luckily it only happens in dev...
+	#gem 'premailer-rails3'
+
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'debugger'
+
+	gem "bullet"
 end
 
-group :assets do
-	#gem 'less-rails'
-	gem 'sass-rails'#,   '~> 3.2.3'
-	gem 'coffee-rails'#, '~> 3.2.1'
-	gem 'jquery-rails'
-	#gem 'jquery-mobile-rails'
-	#gem 'compass-rails'
 
-	#gem 'execjs'
-	
-	# this coffescript version is important
-	# otherwise the js files containing the word "arguments"
-	# will not compile...
-	gem 'coffee-script-source', '1.2.0'
-	#gem 'compass_twitter_bootstrap', '2.0.7'
-	gem 'twitter-bootstrap-rails' #, '2.0.7'
-	
-	#gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :github => 'anjlab/bootstrap-rails'
-	
-	# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-	gem 'therubyracer'
-
-	#gem 'uglifier', '>= 1.0.3'
-end
+gem 'awesome_print'
+gem 'compass-rails'
+gem 'haml'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'modernizr_rails', :require => 'modernizr-rails'
+gem 'newrelic_rpm'
+gem 'protected_attributes'
+gem 'rails_autolink' #https://github.com/tenderlove/rails_autolink - could be great for notes
+gem 'thin'
+gem 'foundation-rails', '5.0.2.0'
+gem 'foundation-icons-sass-rails'
