@@ -15,7 +15,7 @@ Guillaumefradin::Application.routes.draw do
 	# match "test" => "home#test"
 
 	get "printmosaic" => "printmosaic#index"
-	# match "printmosaic/dev" => "printmosaic#dev"
+	get "printmosaic/dev" => "printmosaic#dev"
 
 	get '*path' => "home#redirect"
 
