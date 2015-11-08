@@ -10,7 +10,8 @@ class Publish
 	end
 
 	def dest_folder
-		"/home/frading/work/web/guillaumefradin/dev/frading.github.io"
+		#{}"/home/frading/work/web/guillaumefradin/dev/frading.github.io"
+		"/home/frading/work/web/guillaumefradin/github_pages/frading.github.io"
 	end
 
 	def host
@@ -25,7 +26,7 @@ class Publish
 		puts cmd
 		`#{cmd}`
 	end
-	
+
 	def start
 		urls.each do |url|
 			fetch_url(url)
