@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-ruby "2.2.1"
-gem 'rails', '4.1.0'
+ruby "2.3.1"
+gem 'rails', '>= 5.0.0.rc1', '< 5.1'
 
 gem 'pg'
 
-gem 'sass-rails', '4.0.2'
+gem 'sass-rails' #, '4.0.2'
 gem 'coffee-rails'
-gem 'therubyracer'
+#gem 'therubyracer'
 
 group :production do
 	#gem 'rails_12factor'
@@ -39,10 +39,10 @@ gem 'compass-rails'
 gem 'haml'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'modernizr_rails', :require => 'modernizr-rails'
+gem 'modernizr_rails' #, :require => 'modernizr-rails'
 #gem 'newrelic_rpm'
 gem 'protected_attributes'
 gem 'rails_autolink' #https://github.com/tenderlove/rails_autolink - could be great for notes
 gem 'thin'
-gem 'foundation-rails', '5.0.2.0'
+gem 'foundation-rails' #, '5.0.2.0'
 gem 'foundation-icons-sass-rails'

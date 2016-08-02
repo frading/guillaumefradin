@@ -17,6 +17,8 @@ Guillaumefradin::Application.routes.draw do
 	get "printmosaic" => "printmosaic#index"
 	get "printmosaic/dev" => "printmosaic#dev"
 
+	get "vfxtoolbox" => "vfxtoolbox#index"
+
 	get '*path' => "home#redirect"
 
 	
